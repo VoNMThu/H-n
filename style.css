@@ -1,0 +1,89 @@
+.header {
+    text-align: center;
+    margin-bottom: 10px; /* hoặc chỉnh margin nhỏ lại tùy ý */
+}
+
+
+.tieude {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    transition: transform 0.5s ease;
+}
+
+.tieude:hover{
+    transform: rotate(3deg) scale(1.5);
+}
+
+.chon {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.5s ease;
+}
+
+.chon:hover {
+    transform: scale(1.5);
+}
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color:#7F8CAA; 
+    color: #333446;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center; 
+    font-family: 'Times New Roman', Times, serif
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.box {
+    height: 270px;
+    width: 210px;
+    text-align: center;
+    background-color: #B8CFCE;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 500px) {
+    .box {
+        flex: 0 1 100%;
+    }
+}
+
+.box:hover{
+    transform: scale(1.1);
+    background-color: #333446;
+    color: #B8CFCE;
+}
+
+.img {
+    border-radius: 10px;
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.box p{
+    padding: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
